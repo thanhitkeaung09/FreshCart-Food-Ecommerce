@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Inter', sans-serif;
+    /*font-weight: 600;*/
+}
+
+.swiper {
+    width: 100%;
+    /*background-color: #e3fcf7;*/
+
+    /*height: 70vh;*/
+}
+.main-page-bg{
+    background-color: #e3fcf7;
+}
+.self-page-bg{
+    background-color: #dfe2e1;
+}
+
+.bg-image{
+    background-image: url("assets/images/model.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #0aad0a !important;
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
